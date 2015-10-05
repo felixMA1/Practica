@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+
+        #saludo {
+            background: rgba(0, 0, 0, .8);
+            min-height: 50px;
+            margin-bottom: 20px;
+            color: yellow;
+        }
+
+        #saludo > p {
+            margin: 0;
+            font-size: 1.6em;
+            font-family: "Comic Sans MS"
+        }
+        #container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        #containerClase {
+            border: 1px solid;
+            margin: 0 5px 5px 5px;
+            width: 1590px;
+            height: 820px;
+            overflow: hidden;
+        }
+        #enviar {
+            margin-top: 10px;
+        }
+    </style>
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div id="saludo">
+    <p></p>
+</div>
+    <div id="container">
+        X<input type="text" id="x" placeholder="Numero eje X" />
+        Y<input type="text" id="y" placeholder="Numero eje Y" />
+        Ancho<input type="text" id="w" placeholder="Ancho" />
+        Alto<input type="text" id="h" placeholder="Alto"/>
+        Color<input type="color" id="color" />
+        <input type="button" id="enviar" value="Enviar" />
+    </div>
+    <h3>Composicion de la clase</h3>
+<div id="containerClase">
+
+    <canvas id="myCanvas" width="1590" height="850"></canvas>
+</div>
+
+
+    <script src="funcionesClase.js"></script>
+</body>
+</html>
